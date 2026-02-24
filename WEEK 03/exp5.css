@@ -1,0 +1,24 @@
+.first{
+    text-align: center;
+    background-color: grey;
+    width:200px;
+    height:200px;
+    padding:25px;
+    position:static;
+}
+.second{
+    text-align: center;
+    background-color: lightcoral;
+    width:200px;
+    height:200px;
+    padding:25px;
+    position:sticky;
+}
+.third{
+    text-align: center;
+    background-color: lightseagreen;
+    width:200px;
+    height:200px;
+    padding:25px;
+    position:relative;
+}

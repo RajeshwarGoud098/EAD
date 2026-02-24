@@ -1,0 +1,19 @@
+body{
+    background-color: lightblue;
+}
+h2{
+    color: blue;
+    text-align: center;
+}
+#hello{
+    color: azure;
+    margin-left: 40px;
+}
+.hi{
+    color: purple;
+    text-align: right;
+}
+button{
+    color: green;
+    font-size: 40px;
+}
