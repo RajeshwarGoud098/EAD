@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .button {
+            height: 2cm;
+            width: 3cm;
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        #display {
+            height: 2cm;
+            background-color: rgb(108, 171, 150);
+            text-align: center;
+            width: 12cm;
+            font-size: 20px;
+        }
+
+        .boxEqual {
+            height: calc(4cm + 10px);
+            width: 3cm;
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .boxZero {
+            height: 2cm;
+            width: calc(6cm + 10px);
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        .button:hover,
+        .boxEqual:hover,
+        .boxZero:hover {
+            background-color: red;
+        }
+
+        table {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="calculator">
+            <table>
+                <tr>
+                    <td colspan="4">
+                        <input type="text" id="display" readonly>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="button" style="background-color:red;" onclick="clearThis()">C</div>
+                    </td>
+                    <td>
+                        <div class="button">M+</div>
+                    </td>
+                    <td>
+                        <div class="button" onclick="append('/')">/</div>
+                    </td>
+                    <td>
+                        <div class="button" onclick="append('*')">X</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="button" onclick="append('7')">7</div>
+                    </td>
+                    <td>
+                        <div class="button" onclick="append('8')">8</div>
+                    </td>
+                    <td>
+                        <div class="button" onclick="append('9')">9</div>
+                    </td>
+                    <td>
+                        <div class="button" onclick="append('-')">-</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="button" onclick="append('4')">4</div>
+                    </td>
+                    <td>
+                        <div class="button" onclick="append('5')">5</div>
+                    </td>
+                    <td>
+                        <div class="button" onclick="append('6')">6</div>
+                    </td>
+                    <td>
+                        <div class="button" onclick="append('+')">+</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="button" onclick="append('1')">1</div>
+                    </td>
+                    <td>
+                        <div class="button" onclick="append('2')">2</div>
+                    </td>
+                    <td>
+                        <div class="button" onclick="append('3')">3</div>
+                    </td>
+                    <td rowspan="2">
+                        <div class="boxEqual" onclick="evalu()">=</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <div class="boxZero" onclick="append('0')">0</div>
+                    </td>
+                    <td>
+                        <div class="button" onclick="append('.')">.</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <script>
+        let display = document.getElementById('display');
+
+        function append(value) {
+            display.value += value;
+        }
+
+        function evalu() {
+            try {
+                display.value = eval(display.value);
+            } catch {
+                display.value = 'ERROR';
+            }
+        }
+
+        function clearThis() {
+            display.value = '';
+        }
+    </script>
+</body>
+
+</html>
