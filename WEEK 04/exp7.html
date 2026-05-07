@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .button {
+            height: 2cm;
+            width: 3cm;
+            background-color: gray;
+        }
+
+        .display {
+            height: 2cm;
+            background-color: rgb(108, 171, 150);
+        }
+
+        .boxEqual {
+            height: calc(4cm + (10px));
+            width: 3cm;
+            background-color: gray;
+        }
+
+        .boxZero {
+            height: 2cm;
+            width: calc(6cm + (10px));
+            background-color: gray;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        td>div {
+            display: flex;
+            align-content: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .button:hover,
+        .boxEqual:hover,
+        .boxZero:hover {
+            background-color: red;
+        }
+
+        table {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div>
+            <div class="calculator">
+                <table>
+                    <tr>
+                        <td colspan="4">
+                            <div class="display"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="button">MC</div>
+                        </td>
+                        <td>
+                            <div class="button">M+</div>
+                        </td>
+                        <td>
+                            <div class="button">/</div>
+                        </td>
+                        <td>
+                            <div class="button">X</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="button">7</div>
+                        </td>
+                        <td>
+                            <div class="button">8</div>
+                        </td>
+                        <td>
+                            <div class="button">9</div>
+                        </td>
+                        <td>
+                            <div class="button">-</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="button">4</div>
+                        </td>
+                        <td>
+                            <div class="button">5</div>
+                        </td>
+                        <td>
+                            <div class="button">6</div>
+                        </td>
+                        <td>
+                            <div class="button">+</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="button">1</div>
+                        </td>
+                        <td>
+                            <div class="button">2</div>
+                        </td>
+                        <td>
+                            <div class="button">3</div>
+                        </td>
+                        <td rowspan="2">
+                            <div class="boxEqual">=</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="boxZero">0</div>
+                        </td>
+                        <td>
+                            <div class="button">.</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

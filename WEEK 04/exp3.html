@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website</title>
+    <style>
+        label {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        div {
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 5px 7px;
+        }
+
+        button:focus {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Feedback Form</h1>
+    <div>
+        <form action="">
+            <table>
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="rollNo">Roll Number</label></td>
+                    <td><input type="number" name="rollNo" id="rollNo"></td>
+                </tr>
+                <tr>
+                    <td><label for="message">Feedback Message</label></td>
+                    <td><textarea placeholder="Enter your feedback message" id="message" name="message" rows="4"
+                            cols="50">
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="satisfied">How satisfied are
+                            you?</label></td>
+                    <td>
+                        <input type="radio" id="satisfied" name="satisfied" value="satisfied"><label
+                            for="satisfied">Satisfied</label>
+                        <input type="radio" id="neutal" name="satisfied" value="neutal"><label
+                            for="neutal">Neutal</label>
+                        <input type="radio" id="unsatisfied" name="satisfied" value="unsatisfied"><label
+                            for="unsatisfied">Unsatisfied</label>
+                    </td>
+
+                </tr>
+            </table>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

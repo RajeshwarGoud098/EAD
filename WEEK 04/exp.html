@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <style>
+            body{
+                margin: 0;
+                min-height:100vh;
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+                justify-content:center;
+                background-color: whitesmoke;
+            }
+            div{
+                background-color: whitesmoke;
+                padding:30px;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px gray;
+            }
+            h1{
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>About Me</h1>
+        <div>
+            <h3>Registration Form</h3>
+            <form action="">
+                <table>
+                    <tr>
+                        <td><label for="name">Name</label></td>
+                        <td><input type="text" id="name" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="rollNo">Roll Number</label></td>
+                        <td><input type="number" id="rollNo" name="rollNo"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender"|>Gender</label></td>
+                        <td>
+                            <input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label>
+                            <input type="radio" id="fenale" name="gender" value="Female"><label for="female">Female</label>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="branch">Branch</label></td>
+                        <td>
+                            <select name="branches" id="branch">
+                            <option value="IT">Information Technology</option>
+                            <option value="CSE">Computer Science and Engineering</option>
+                            <option value="NON-CSE">Other core branches</option>
+                            </select>                    
+                        </td>
+                    </tr>
+                </table>
+                <button style="text-align: center;">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>

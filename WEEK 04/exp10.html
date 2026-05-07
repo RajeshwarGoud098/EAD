@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website</title>
+    <style>
+        label {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        div {
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 50px;
+            border-radius: 50px;
+            box-shadow: 20px 30px 10px rgba(120, 67, 67, 0.797);
+        }
+
+        button {
+            padding: 5px 7px;
+        }
+
+        button:focus {
+            background-color: rgb(234, 114, 114);
+        }
+
+        h3 {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        form:hover {
+            background-color: #82dbed;
+        }
+
+        input:focus {
+            background-color: rgb(196, 152, 225);
+        }
+
+        button:hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="">
+            <label for="">
+                <h3>Login</h3>
+            </label>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username">
+            <label for="username">Password</label>
+            <input type="password" name="password" id="password">
+            <button>Login</button>
+        </form>
+    </div>
+</body>
+
+</html>
